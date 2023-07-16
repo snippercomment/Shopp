@@ -34,7 +34,7 @@ class ProductDetail extends Component {
                     </tr>
                     <tr>
                       <td align="right">Price:</td>
-                      <td>{prod.price}</td>
+                      <td>{prod.price} VND</td>
                     </tr>
                     <tr>
                       <td align="right">Category:</td>
@@ -84,9 +84,9 @@ class ProductDetail extends Component {
         mycart[index].quantity += quantity;
       }
       this.context.setMycart(mycart);
-      alert('OK BABY!');
+      alert('Thêm vào giỏ hàng thành công!');
     } else {
-      alert('Please input quantity');
+      alert('Vui lòng thêm quantity');
     }
   }
 }

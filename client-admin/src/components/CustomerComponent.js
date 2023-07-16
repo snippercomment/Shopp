@@ -39,7 +39,7 @@ class Customer extends Component {
           <td>{new Date(item.cdate).toLocaleString()}</td>
           <td>{item.customer.name}</td>
           <td>{item.customer.phone}</td>
-          <td>{item.total}</td>
+          <td>{item.total} VND</td>
           <td>{item.status}</td>
         </tr>
       );
@@ -52,9 +52,9 @@ class Customer extends Component {
             <td>{item.product._id}</td>
             <td>{item.product.name}</td>
             <td><img src={"data:image/jpg;base64," + item.product.image} width="70px" height="70px" alt="" /></td>
-            <td>{item.product.price}</td>
+            <td>{item.product.price} VND</td>
             <td>{item.quantity}</td>
-            <td>{item.product.price * item.quantity}</td>
+            <td>{item.product.price * item.quantity} VND</td>
           </tr>
         );
       });

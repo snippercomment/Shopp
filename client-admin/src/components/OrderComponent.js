@@ -24,7 +24,8 @@ class Order extends Component {
           <td>{item.status}</td>
           <td>
             {item.status === 'PENDING' ?
-            <div><span className="link" onClick={() => this.lnkApproveClick(item._id)}>APPROVE</span> || <span className="link" onClick={() => this.lnkCancelClick(item._id)}>CANCEL</span></div>
+            <div><span className="link" onClick={() => this.lnkApproveClick(item._id)}>APPROVE</span> || 
+            <span className="link" onClick={() => this.lnkCancelClick(item._id)}>CANCEL</span></div>
               : <div />}
           </td>
         </tr>
@@ -38,9 +39,9 @@ class Order extends Component {
             <td>{item.product._id}</td>
             <td>{item.product.name}</td>
             <td><img src={"data:image/jpg;base64," + item.product.image} width="70px" height="70px" alt="" /></td>
-            <td>{item.product.price}</td>
+            <td>{item.product.price} VND</td>
             <td>{item.quantity}</td>
-            <td>{item.product.price * item.quantity}</td>
+            <td>{item.product.price * item.quantity} VND</td>
           </tr>
         );
       });

@@ -73,7 +73,7 @@ router.post('/signup', async function (req, res) {
   });
   // customer
 router.post('/active', async function (req, res) {
-    const _id = req.body.id;
+    const _id = req.body?.id;
     const token = req.body.token;
     const result = await CustomerDAO.active(_id,token,1);
     res.json(result);

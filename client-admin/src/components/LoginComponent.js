@@ -14,7 +14,7 @@ class Login extends Component {
   render() {
     if (this.context.token === '') {
       return (
-        <div className="align-valign-center">
+        <div className="align-valign-center ">
           <h2 className="text-center">ADMIN LOGIN</h2>
           <form>
             <table className="align-center">

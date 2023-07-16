@@ -51,9 +51,9 @@ class Active extends Component {
     axios.post('/api/customer/active', body).then((res) => {
       const result = res.data;
       if (result) {
-        alert('OK BABY!');
+        alert('Kiểm tra Active thành công!');
       } else {
-        alert('SORRY BABY!');
+        alert('Kiểm tra Active thất bại!');
       }
     });
   }

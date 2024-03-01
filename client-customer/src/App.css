@@ -40,7 +40,12 @@ span.link {
 div.border-bottom {
   border-bottom: 1px solid black;
   padding: 10px 0px 10px 0px;
+  
 }
+.border-bottom a{
+  text-decoration: none;
+}
+
 div.float-left {
   float: left;
 }

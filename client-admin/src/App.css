@@ -19,6 +19,7 @@ figure.caption-right {
 .align-center {
   width: fit-content;
   margin: 0px auto;
+  background: white;
 }
 .align-valign-center {
   position: absolute;
@@ -27,6 +28,12 @@ figure.caption-right {
   transform: translate(-50%, -50%);
   padding: 0px 20px 20px 20px;
   border: 1px solid black;
+  /* background: #2c1e43; */
+}
+.align-center input{
+  background: #ffeeaa;
+  border-radius: 5px;
+  cursor: pointer;
 }
 .text-center {
   text-align: center;
@@ -41,6 +48,10 @@ div.border-bottom {
   border-bottom: 1px solid black;
   padding: 10px 0px 10px 0px;
 }
+.border-bottom a{
+  text-decoration: none;
+}
+
 div.float-left {
   float: left;
 }
